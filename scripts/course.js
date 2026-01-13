@@ -103,7 +103,10 @@ function createCourseCard(filteredCourse) {
     const container = document.querySelector(".course-container");
     if (!container) return;
 
+    const creditsElement = document.getElementById("total-credits");
     container.innerHTML = "";
+
+    let totalCredits = 0
 
     filteredCourse.forEach(course => {
         const card = document.createElement("div");
@@ -111,6 +114,8 @@ function createCourseCard(filteredCourse) {
         if (course.completed == true) {
             card.classList.add("completed-course")
             text.textContent = `✓ ${course.subject} ${course.number}`
+            totalCredits += course.credits
+            creditsElement.textContent = totalCredits
         } else {
             text.textContent = `${course.subject} ${course.number}`
         }
@@ -134,22 +139,24 @@ function applySavedFilter() {
 }
 
 // LINK CLICK FUNCTION
-allLink.addEventListener("click", () => {
-    localStorage.setItem("selectedFilter", "ALL");
-    setActiveLink("ALL");
-    createCourseCard(courses);
-});
+document.addEventListener("DOMContentLoaded", () => {
+    applySavedFilter();
 
-cseLink.addEventListener("click", () => {
-    localStorage.setItem("selectedFilter", "CSE");
-    setActiveLink("CSE");
-    createCourseCard(courses.filter(c => c.subject === "CSE"));
-});
+    allLink.addEventListener("click", () => {
+        localStorage.setItem("selectedFilter", "ALL");
+        setActiveLink("ALL");
+        createCourseCard(courses);
+    });
 
-wddLink.addEventListener("click", () => {
-    localStorage.setItem("selectedFilter", "WDD");
-    setActiveLink("WDD");
-    createCourseCard(courses.filter(c => c.subject === "WDD"));
-});
+    cseLink.addEventListener("click", () => {
+        localStorage.setItem("selectedFilter", "CSE");
+        setActiveLink("CSE");
+        createCourseCard(courses.filter(c => c.subject === "CSE"));
+    });
 
-applySavedFilter();
+    wddLink.addEventListener("click", () => {
+        localStorage.setItem("selectedFilter", "WDD");
+        setActiveLink("WDD");
+        createCourseCard(courses.filter(c => c.subject === "WDD"));
+    });
+});
