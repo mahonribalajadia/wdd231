@@ -1,0 +1,257 @@
+:root {
+    --body-bg-color: #d6d6d6;
+    --nav-bg-color: #282828;
+    --card-bg-color: #ebebeb;
+    --btn-bg-color: ;
+    --body-text-color: #2F2F2F;
+    --body-text-color2: #444444;
+    --body-text-color3: #E5E5E5;
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    color: var(--body-text-color);
+    font-family: var(--body-font);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: var(--nav-bg-color);
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+nav li {
+    border: 1.5px solid #010101;
+}
+
+nav a {
+    color: var(--body-text-color3);
+    padding: 10px;
+    display: block;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+}
+
+h2 {
+    background-color: var(--nav-bg-color);
+    color: var(--body-text-color3);
+    text-align: center;
+    font-size: large;
+    padding: 5px 0;
+}
+
+p {
+    color: #444444;
+}
+
+footer {
+    background-color: var(--nav-bg-color);
+}
+
+footer div {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    color: var(--body-text-color3);
+    font-size: small;
+}
+
+/* Class Selectors */
+
+.side-margin {
+    margin: auto 10px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--nav-bg-color);
+}
+
+.header-top .icon {
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+    color: #F3B607;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.page-name {
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.about-me-sec {
+    margin-bottom: 1rem;
+}
+
+.about-me-sec div {
+    padding: 1rem;
+    background-color: var(--card-bg-color);
+    line-height: 1.2rem;
+}
+
+.photo-sec {
+    margin-bottom: 3rem;
+}
+
+.photo-sec div {
+    display: flex;
+    justify-content: center;
+    background-color: var(--card-bg-color);
+    padding: 2rem 3rem;
+}
+
+.photo-sec img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.8));
+}
+
+.courses-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.courses-btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.courses-btn-container a {
+    padding: 10px;
+    background-color: #F3B607;
+    border: 2px solid var(--nav-bg-color);
+    color: var(--body-text-color);
+    font-family: var(--heading-font);
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.course-container {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.course-container div {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.completed-course {
+    background-color: #EEFEEE !important;
+}
+
+.courses-sec p {
+    text-align: center;
+}
+
+.social-container {
+    background-color: var(--body-bg-color);
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-container .icon {
+    height: 36px;
+    width: 36px;
+    color: var(--body-text-color);
+}
+
+.open {
+    display: block;
+}
+
+.active-link {
+    background-color: #F3B607;
+    color: var(--body-text-color);
+}
+
+.courses-btn-container a.active-course {
+    background-color: #a02016;
+    color: white;
+}
+
+/* ID Selectors */
+
+#lastModified {
+    margin-top: 10px;
+}
+
+#nav-menu {
+    position: relative;
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+}
+
+#menu-open {
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    opacity: 1;
+}
+
+#menu-open.hide {
+    opacity: 0;
+}
+
+#menu-close {
+    position: absolute;
+    transition: all 300ms ease-in-out;
+    opacity: 0;
+}
+
+#menu-close.show {
+    opacity: 1;
+}
+
+/* Psuedo Classes */
+
+nav a:hover {
+    background-color: #F3B607;
+    color: var(--body-text-color);
+    transition: 500ms;
+}
