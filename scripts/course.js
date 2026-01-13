@@ -142,19 +142,22 @@ function applySavedFilter() {
 document.addEventListener("DOMContentLoaded", () => {
     applySavedFilter();
 
-    allLink.addEventListener("click", () => {
+    allLink.addEventListener("click", (event) => {
+        event.preventDefault();
         localStorage.setItem("selectedFilter", "ALL");
         setActiveLink("ALL");
         createCourseCard(courses);
     });
 
-    cseLink.addEventListener("click", () => {
+    cseLink.addEventListener("click", (event) => {
+        event.preventDefault();
         localStorage.setItem("selectedFilter", "CSE");
         setActiveLink("CSE");
         createCourseCard(courses.filter(c => c.subject === "CSE"));
     });
 
-    wddLink.addEventListener("click", () => {
+    wddLink.addEventListener("click", (event) => {
+        event.preventDefault();
         localStorage.setItem("selectedFilter", "WDD");
         setActiveLink("WDD");
         createCourseCard(courses.filter(c => c.subject === "WDD"));

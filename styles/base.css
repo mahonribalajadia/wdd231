@@ -101,6 +101,11 @@ footer p {
     color: #F3B607;
 }
 
+.header-top img {
+    width: 48px;
+    height: 48px;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
@@ -212,7 +217,7 @@ footer p {
 
 .courses-btn-container a.active-course {
     background-color: #a02016;
-    color: white;
+    color: #ffffff;
 }
 
 /* ID Selectors */
