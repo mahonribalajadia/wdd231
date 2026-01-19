@@ -1,0 +1,38 @@
+const url = 'data/members.json';
+const cards = document.querySelector('#cards');
+
+async function getMemberData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    displayMembers(data.members); // reference the members array of the JSON data object, not just the object
+}
+
+const displayMembers = (members) => {
+    members.forEach((member) => {
+        let card = document.createElement("section");
+        let fullName = document.createElement("h2");
+        let birthDate = document.createElement("p");
+        let birthPlace = document.createElement("p");
+        let portrait = document.createElement("img");
+
+        card.classList.add("prophet-card");
+        portrait.classList.add("portrait");
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+        birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
+        birthPlace.textContent = `Place of Birth: ${prophet.birthplace}`;
+        portrait.setAttribute("src", prophet.imageurl);
+        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
+        portrait.setAttribute("loading", "lazy");
+        portrait.setAttribute("width", "340");
+        portrait.setAttribute("height", "440");
+
+        card.appendChild(fullName);
+        card.appendChild(birthDate);
+        card.appendChild(birthPlace);
+        card.appendChild(portrait);
+
+        cards.appendChild(card);
+    });
+}
+
+getProphetData();

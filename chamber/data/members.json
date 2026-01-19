@@ -1,0 +1,84 @@
+{
+    "members": [
+        {
+            "name": "CSI Malls",
+            "address": "Rizal Ave, Bayambang, Pangasinan",
+            "phonenum": "+63(75)5224228",
+            "url": "https://csimalls.com/",
+            "imageurl": "images/businesses/csi.webp",
+            "level": 3
+        },
+        {
+            "name": "Pure Gold",
+            "address": "Rizal Ave, Bayambang, Pangasinan",
+            "phonenum": "+639123789063",
+            "url": "http://puregoldbeta.webtogo.com.ph/myhome.do",
+            "imageurl": "images/businesses/puregold.webp",
+            "level": 3
+        },
+        {
+            "name": "Mercury Drug",
+            "address": "Zone 1, Bayambang, Pangasinan",
+            "phonenum": "+639098123654",
+            "url": "https://www.mercurydrug.com/",
+            "imageurl": "images/businesses/mercury.webp",
+            "level": 2
+        },
+        {
+            "name": "McDonald's",
+            "address": "44 Rizal Ave, Bayambang, Pangasinan",
+            "phonenum": "+639102657839",
+            "url": "https://www.mcdonalds.com.ph/",
+            "imageurl": "images/businesses/mcdo.webp",
+            "level": 2
+        },
+        {
+            "name": "Jollibee",
+            "address": "Rizal Ave, Bayambang, Pangasinan",
+            "phonenum": "+63(75)5925413",
+            "url": "https://www.jollibeefoods.com/",
+            "imageurl": "images/businesses/jollibee.webp",
+            "level": 2
+        },
+        {
+            "name": "Angel's Burger",
+            "address": "Zone 1, Bayambang, Pangasinan",
+            "phonenum": "+63963142879",
+            "url": "https://www.facebook.com/angelsburgerph/",
+            "imageurl": "images/businesses/angels.webp",
+            "level": 1
+        },
+        {
+            "name": "Franks N' Burgers",
+            "address": "Quezon Blvd, Bayambang, Pangasinan",
+            "phonenum": "+639992105638",
+            "url": "https://www.facebook.com/franksnburgersph/",
+            "imageurl": "images/businesses/franks.webp",
+            "level": 1
+        },
+        {
+            "name": "Watsons",
+            "address": "Zone 1, Bayambang, Pangasinan",
+            "phonenum": "+639209795784",
+            "url": "https://www.watsons.com.ph/",
+            "imageurl": "images/businesses/watsons.webp",
+            "level": 2
+        },
+        {
+            "name": "Alfamart",
+            "address": "Quezon Blvd, Bayambang, Pangasinan",
+            "phonenum": "+639636891274",
+            "url": "https://www.alfamart.com.ph/",
+            "imageurl": "images/businesses/alfamart.webp",
+            "level": 2
+        },
+        {
+            "name": "7-eleven",
+            "address": "Zone 4, Rizal Ave, Bayambang, Pangasinan",
+            "phonenum": "+639169248357",
+            "url": "https://www.7-eleven.com.ph/",
+            "imageurl": "images/businesses/7eleven.webp",
+            "level": 3
+        }
+    ]
+}
