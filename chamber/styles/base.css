@@ -128,37 +128,37 @@ header .icon {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 
-    .grid .card {
+    .card {
         border: 1px solid rgba(0, 0, 0, 0.2);
         padding: 20px 10px;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     }
 
-    .grid .business-name {
+    .business-name {
         font-family: var(--body-font);
         font-size: large;
         font-weight: bold;
         text-align: center;
     }
 
-    .grid .divider {
+    .divider {
         width: 80%;
         height: 1px;
         background-color: rgba(0, 0, 0, 0.2);
         margin: 0.5rem auto;
     }
 
-    .grid .business-info {
+    .business-info {
         display: flex;
         gap: 10px;
     }
 
-    .grid .business-info img {
+    .business-info img {
         width: 80px;
         height: auto;
     }
 
-    .grid .business-info div {
+    .business-info div {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -170,37 +170,36 @@ header .icon {
     display: flex;
     flex-direction: column;
 
-    .list .card {
+    .card {
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 10px;
         padding: 10px;
     }
 
-    /* Replace SCSS &:nth-child */
-    .list .card:nth-child(odd) {
+    .card:nth-child(odd) {
         background-color: var(--nav-bg-color);
     }
 
-    .list .business-name {
+    .business-name {
         font-weight: bold;
     }
 
-    .list .divider {
+    .divider {
         display: none;
     }
 
-    .list .business-info img {
+    .business-info img {
         display: none;
     }
 
-    .list .business-info div {
+    .business-info div {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
     }
 
-    .list a {
+    .business-info a {
         display: none;
     }
 
