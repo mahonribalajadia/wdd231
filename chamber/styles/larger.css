@@ -1,0 +1,86 @@
+@media screen and (min-width: 800px) {
+
+    main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        width: 100%;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav {
+        background-color: inherit;
+        margin: 0;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    nav a {
+        color: var(--primary-color);
+        font-weight: bold;
+        padding: 10px 10px;
+        border-bottom: 2px solid var(--nav-bg-color);
+        transition: 300ms ease-in-out;
+    }
+
+
+    /* Class Selectors */
+
+    .active-link {
+        background-color: inherit;
+        color: var(--primary-color);
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .logo-container {
+        max-width: none;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .footer-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: top;
+        gap: 1rem;
+        background-color: var(--primary-color);
+        padding: 1rem 20px;
+    }
+
+    .social-container {
+        align-items: baseline;
+        gap: 1rem;
+    }
+
+    /* ID Selectors */
+
+    #nav-menu {
+        display: none;
+    }
+
+    /* Psuedo Classes */
+
+    nav a:hover {
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+}
