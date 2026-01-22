@@ -28,8 +28,7 @@ const displayMembers = (members) => {
         logo.setAttribute("src", member.imageurl);
         logo.setAttribute("alt", `${member.name} Logo`)
         logo.setAttribute("loading", "lazy");
-        logo.setAttribute("width", "80");
-        logo.setAttribute("height", "80");
+        logo.setAttribute("style", "width:80px; height:80px");
         address.textContent = member.address;
         contact.textContent = member.phonenum;
         url.textContent = "More Details";

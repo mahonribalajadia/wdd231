@@ -4,7 +4,7 @@
     --nav-bg-color: #d6d6d6;
     --text-color: #363636;
     --heading-font: "Poppins", sans-serif;
-    --body-font: "Montserrat", sans-serif;
+    --body-font: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 * {
@@ -49,6 +49,7 @@ nav a {
     padding: 10px 20px;
     display: block;
     color: #fff;
+    font-family: var(--heading-font);
 }
 
 h1 {
@@ -61,6 +62,7 @@ a {
 
 footer {
     background-color: var(--primary-color);
+    min-height: 320px;
 }
 
 footer span {
@@ -116,7 +118,6 @@ header .icon {
 .cards-sec {
     display: grid;
     gap: 1rem;
-    /* margin: 0 20px; */
 }
 
 .card-btns {
@@ -155,7 +156,7 @@ header .icon {
 }
 
 .grid .business-info img {
-    width: 80px;
+    width: 100%;
     height: auto;
 }
 
@@ -212,7 +213,6 @@ header .icon {
 
 .btns-container a {
     padding: 10px;
-    /* background-color: #FEB743; */
     color: #2b2b2b;
     border: 1.5px solid var(--secondary-color);
     font-weight: 700;
