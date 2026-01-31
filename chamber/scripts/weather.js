@@ -1,7 +1,5 @@
 // select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#weather-desc');
+const weatherSec = document.querySelector('.weather-sec');
 
 const weatherKey = "0afb5e3dd3df43c14b0ff72f079f9c99"
 const weatherLat = "15.81"
@@ -27,10 +25,26 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
+    let card = document.createElement("div");
+    let weatherIcon = document.createElement("img");
+    let textContainer = document.createElement("div");
+    let currentTemp = document.createElement("p");
+    let captionDesc = document.createElement("p");
+
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    currentTemp.setAttribute('id', 'current-temp');
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+    weatherIcon.setAttribute('id', 'weather-icon');
     captionDesc.textContent = `${desc}`;
+    captionDesc.setAttribute('id', 'weather-desc');
+
+    card.appendChild(weatherIcon);
+    card.appendChild(textContainer);
+    textContainer.appendChild(currentTemp);
+    textContainer.appendChild(captionDesc);
+
+    weatherSec.appendChild(card);
 }
