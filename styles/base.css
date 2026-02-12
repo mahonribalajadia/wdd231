@@ -2,10 +2,11 @@
     --body-bg-color: #d6d6d6;
     --nav-bg-color: #282828;
     --card-bg-color: #ebebeb;
-    --btn-bg-color: ;
     --body-text-color: #2F2F2F;
     --body-text-color2: #444444;
     --body-text-color3: #E5E5E5;
+    --accent-color1: #A02016;
+    --accent-color2: #F3B607;
     --heading-font: "Poppins", sans-serif;
     --body-font: "Montserrat", sans-serif;
 }
@@ -81,6 +82,41 @@ footer p {
     font-size: small;
 }
 
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
+dialog h2 {
+    background-color: transparent;
+    color: var(--accent-color1);
+    font-family: var(--heading-font);
+}
+
+dialog h3,
+dialog p {
+    margin-bottom: 12px;
+    color: var(--body-text-color);
+}
+
 /* Class Selectors */
 
 .side-margin {
@@ -98,7 +134,7 @@ footer p {
     height: 36px;
     width: 36px;
     margin-right: 10px;
-    color: #F3B607;
+    color: var(--accent-color2);
 }
 
 .header-top img {
@@ -162,7 +198,7 @@ footer p {
 
 .courses-btn-container a {
     padding: 10px;
-    background-color: #F3B607;
+    background-color: var(--accent-color2);
     border: 2px solid var(--nav-bg-color);
     color: var(--body-text-color);
     font-family: var(--heading-font);
@@ -211,12 +247,12 @@ footer p {
 }
 
 .active-link {
-    background-color: #F3B607;
+    background-color: var(--accent-color2);
     color: var(--body-text-color);
 }
 
 .courses-btn-container a.active-course {
-    background-color: #a02016;
+    background-color: var(--accent-color1);
     color: #ffffff;
 }
 
@@ -253,10 +289,15 @@ footer p {
     opacity: 1;
 }
 
+#total-credits {
+    font-weight: 700;
+    color: var(--body-text-color);
+}
+
 /* Psuedo Classes */
 
 nav a:hover {
-    background-color: #F3B607;
+    background-color: var(--accent-color2);
     color: var(--body-text-color);
     transition: 500ms;
 }

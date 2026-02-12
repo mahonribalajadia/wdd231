@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bayambang Chamber of Commerce</title>
+    <title>Thank You</title>
     <link rel="icon" href="images/bayambang-logo.ico">
     <meta name="description"
         content="The Bayambang Chamber of Commerce supports local businesses with events, networking, and a directory that drives growth and community.">
     <meta name="author" content="Mahonri Balajadia">
-    <meta property="og:title" content="Bayambang Chamber of Commerce">
+    <meta property="og:title" content="Thank You">
     <meta property="og:description"
         content="The Bayambang Chamber of Commerce supports local businesses with events, networking, and a directory that drives growth and community.">
     <meta property="og:image" content="https://mahonribalajadia.github.io/wdd231/chamber/images/chamber-web.jpg">
-    <meta property="og:url" content="https://mahonribalajadia.github.io/wdd231/chamber/index.html">
+    <meta property="og:url" content="https://mahonribalajadia.github.io/wdd231/chamber/thankyou.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -28,11 +28,9 @@
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 800px)">
-    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/forminfo.js" defer></script>
 </head>
 
 <body>
@@ -56,7 +54,7 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="directory.html">Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
@@ -65,41 +63,27 @@
         </div>
     </header>
     <main>
-        <section class="hero-sec">
-            <div class="hero-container">
-                <div class="hero-text">
-                    <span class="hero-title">Empowering Businesses.<br>Growing Bayambang.</span>
-                    <p>The Bayambang Chamber of Commerce connects local businesses, entrepreneurs, and leaders to foster
-                        economic growth and community development. Discover opportunities, build partnerships, and be
-                        part
-                        of a thriving business community in Bayambang.</p>
+        <section class="result-sec">
+            <div class="result-container">
+                <h1>Thank You for Your Application!</h1>
+                <p>We’ve received your membership request and will contact you soon with updates. We’re excited to
+                    connect with you!</p>
+                <div class="result-data">
+                    <span>First Name:</span>
+                    <p id="first-name"></p>
+                    <span>Last Name:</span>
+                    <p id="last-name"></p>
+                    <span>Email:</span>
+                    <p id="email"></p>
+                    <span>Mobile Number:</span>
+                    <p id="phone-num"></p>
+                    <span>Business / Organization Name:</span>
+                    <p id="org-name"></p>
+                    <span>Membership Level:</span>
+                    <p id="membership"></p>
+                    <span>Submission Date:</span>
+                    <p id="timestamp"></p>
                 </div>
-                <a href="#" class="hero-btn">Join the Chamber</a>
-            </div>
-        </section>
-        <section class="page-title-sec">
-            <h1>Home</h1>
-        </section>
-        <div class="h-sec-wrapper">
-            <section class="events-sec">
-                <h2>Events</h2>
-                <div>
-                    <p><span>February 12, 2026:</span> Kasalang Bayan 2026</p>
-                    <p><span>March 31, 2026:</span> Pista'y Baley 2026</p>
-                    <p><span>April 4, 2026:</span> People's Grand Ball & Balikbayan Night</p>
-                </div>
-            </section>
-            <section class="weather-sec">
-                <h2>Current Weather</h2>
-            </section>
-            <section class="forecast-sec">
-                <h2>Weather Forecast</h2>
-                <div id="forecast-days">
-                </div>
-            </section>
-        </div>
-        <section class="cards-sec">
-            <div id="cards" class="grid">
             </div>
         </section>
     </main>

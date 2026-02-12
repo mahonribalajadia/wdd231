@@ -86,6 +86,23 @@
         gap: 1rem;
     }
 
+    .j-section-grid {
+        grid-template-columns: 1fr 350px;
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .j-section-grid section {
+        padding: 0;
+    }
+
+    .result-sec {
+        max-width: 600px;
+        margin: 3rem auto;
+    }
+
     /* ID Selectors */
 
     #nav-menu {
