@@ -1,0 +1,18 @@
+{
+    "family_name": "Balajadia",
+    "move_in_date": "2025-06-12",
+    "number_of_people": 2,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Mahonri Balajadia",
+            "gender": "Male",
+            "birthdate": "1998-11-02"
+        },
+        {
+            "name": "Ilyza Chelsea Balajadia",
+            "gender": "Female",
+            "birthdate": "1997-09-20"
+        }
+    ]
+}
