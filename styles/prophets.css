@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+.prophet-card {
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+.portrait {
+    margin-top: 1rem;
+    box-shadow: 0 0 10px black;
+    width: 100%;
+    min-height: 440px;
+    object-fit: cover;
+}
+
+#cards {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 2rem 1rem;
+}
