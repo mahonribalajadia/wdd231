@@ -1,0 +1,26 @@
+body {
+    background-color: #f6f0da;
+    color: darkslategrey;
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+#current-temp {
+    font-weight: bold;
+}
+
+figcaption {
+
+    text-transform: capitalize;
+}
+
+footer {
+    margin: 1rem 0;
+}
