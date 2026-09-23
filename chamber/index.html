@@ -37,10 +37,11 @@
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 800px)">
 
     <!-- Scripts -->
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/cards.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
 </head>
 
 <body>
@@ -64,39 +65,49 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="directory.html" class="active-link">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="index.html" class="active-link">Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">Discover</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
-        <section class="page-title-sec">
-            <h1>Directory</h1>
-        </section>
-        <section class="cards-sec">
-            <div class="btns-container">
-                <a href="#" id="grid-btn" class="card-btns active-btn" aria-label="Grid Button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-grid-3x3-gap" viewBox="0 0 16 16">
-                        <path
-                            d="M4 2v2H2V2zm1 12v-2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m5 10v-2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V7a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1m0-5V2a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1M9 2v2H7V2zm5 0v2h-2V2zM4 7v2H2V7zm5 0v2H7V7zm5 0h-2v2h2zM4 12v2H2v-2zm5 0v2H7v-2zm5 0v2h-2v-2zM12 1a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm1 4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1z" />
-                    </svg>
-                </a>
-                <a href="#" id="list-btn" class="card-btns" aria-label="List Button">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-list-task" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                            d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z" />
-                        <path
-                            d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z" />
-                        <path fill-rule="evenodd"
-                            d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z" />
-                    </svg>
-                </a>
+        <section class="hero-sec">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <span class="hero-title">Empowering Businesses.<br>Growing Bayambang.</span>
+                    <p>The Bayambang Chamber of Commerce connects local businesses, entrepreneurs, and leaders to foster
+                        economic growth and community development. Discover opportunities, build partnerships, and be
+                        part
+                        of a thriving business community in Bayambang.</p>
+                </div>
+                <a href="#" class="hero-btn">Join the Chamber</a>
             </div>
+        </section>
+        <section class="page-title-sec">
+            <h1>Home</h1>
+        </section>
+        <div class="h-sec-wrapper">
+            <section class="events-sec">
+                <h2>Events</h2>
+                <div>
+                    <p><span>September 12-27, 2026:</span> Marian Exhibit</p>
+                    <p><span>September 23, 2026:</span> Feast of Saint Padre Pio</p>
+                    <p><span>September 2026:</span> Tourism and Creative Industries Month Activities</p>
+                </div>
+            </section>
+            <section class="weather-sec">
+                <h2>Current Weather</h2>
+            </section>
+            <section class="forecast-sec">
+                <h2>Weather Forecast</h2>
+                <div id="forecast-days">
+                </div>
+            </section>
+        </div>
+        <section class="cards-sec">
             <div id="cards" class="grid">
             </div>
         </section>
