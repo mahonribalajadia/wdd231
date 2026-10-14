@@ -1,0 +1,17 @@
+@media screen and (min-width: 641px) {
+    #interest-container div {
+        grid-template-areas:
+            "image name"
+            "image divider"
+            "image description"
+            "image address"
+            "image button";
+    }
+
+    #interest-container div img {
+        width: 250px;
+        height: 300px;
+        object-fit: cover;
+
+    }
+}
