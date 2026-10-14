@@ -686,7 +686,7 @@ dialog li {
 #interest-container {
     display: flex;
     flex-direction: column;
-    align-items: ce;
+    align-items: center;
     gap: 1rem;
 }
 
