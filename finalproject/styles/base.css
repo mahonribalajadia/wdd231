@@ -18,8 +18,8 @@ body {
 }
 
 body.no-scroll {
-  overflow: hidden;
-  height: 100vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 header {
@@ -53,9 +53,8 @@ nav {
 }
 
 nav a {
-    color: var(--heading-color);
     text-decoration: none;
-    font-weight:700;
+    font-weight: 700;
     display: block;
     text-align: center;
     padding: 1rem;
@@ -314,20 +313,20 @@ footer a {
 #menu {
     display: block;
     font-size: 2rem;
-	border: 0;
-	background: none;
-	color: var(--heading-color);
- 	position: absolute;
-	top: 13px;
-	right: 1rem;
+    border: 0;
+    background: none;
+    color: var(--heading-color);
+    position: absolute;
+    top: 13px;
+    right: 1rem;
 }
 
 #menu::before {
-	content: "☰";
+    content: "☰";
 }
 
 #menu.open::before {
-	content: "✖";
+    content: "✖";
 }
 
 #top-card-1 {
@@ -395,7 +394,7 @@ footer a {
 }
 
 .filter-link.active {
-  background-color: var(--accent-color);
+    background-color: var(--accent-color);
 }
 
 .gd-card-img {
@@ -506,6 +505,19 @@ footer a {
     font-weight: 600;
 }
 
+.result-data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    align-items: center;
+    font-size: medium;
+    margin-top: 1rem;
+}
+
+.result-data span {
+    font-weight: 700;
+}
+
 /* ---Pseudo Classes */
 
 .contact-form input:required,
@@ -518,7 +530,7 @@ footer a {
     border-bottom: 1px solid green;
 }
 
-.top-card:hover .top-transparent-bg{
+.top-card:hover .top-transparent-bg {
     opacity: 0;
 }
 
