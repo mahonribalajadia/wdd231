@@ -412,6 +412,9 @@ footer a {
     border-bottom: 1px solid var(--accent-color);
     border-right: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .gd-title {
@@ -419,6 +422,70 @@ footer a {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+.gd-card button {
+    padding: 6px 12px;
+    font-weight: bold;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border: solid 1px #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 3rem #777;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+::backdrop {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(1px);
+}
+
+dialog div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+dialog button {
+    padding: .3rem;
+    border: none;
+    font-size: large;
+    font-weight: 700;
+    background-color: transparent;
+    color: var(--accent-color);
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    color: var(--accent-color);
+    rotate: calc(360deg);
+}
+
+#destination-dialog {
+    position: relative;
+}
+
+#close-dialog {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+#dialog-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 /* ----- Contact Page ----- */

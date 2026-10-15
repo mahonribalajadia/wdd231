@@ -1,5 +1,5 @@
 @media screen and (min-width: 600px) {
-    
+
     header div {
         display: flex;
         justify-content: space-between;
@@ -35,7 +35,7 @@
         font-size: 40px;
         margin-bottom: 1rem;
     }
-    
+
     /* --- Class Selectors --- */
 
     .h-hero img {
@@ -62,7 +62,7 @@
         padding: 16px 32px;
         font-size: 18px;
     }
-    
+
     .section-heading {
         margin-bottom: 2rem;
     }
@@ -74,6 +74,7 @@
     .card-text-box {
         min-height: 432px;
     }
+
     .h-feature,
     .h-discover,
     .h-top,
@@ -106,8 +107,9 @@
     }
 
     .footer-container {
-    flex-direction: row;
-}
+        flex-direction: row;
+    }
+
 
     /* --- ID Selectors --- */
 
@@ -179,8 +181,17 @@
         gap: 1rem;
     }
 
+    .gd-card {
+        display: flex;
+        flex-direction: column;
+    }
+
     .gd-text-box {
-        min-height: 432px;
+        flex-grow: 1;
+    }
+
+    .gd-text-box button {
+        margin-top: auto;
     }
 
 
