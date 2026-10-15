@@ -13,6 +13,7 @@ function displayItems(interest) {
         const image = document.createElement('img')
         image.src = `data/images/${item.image}`
         image.alt = item.name
+        image.setAttribute('loading', 'lazy');
         card.appendChild(image)
 
         // Create the Title Element
